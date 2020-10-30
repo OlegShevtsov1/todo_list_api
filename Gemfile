@@ -27,6 +27,12 @@ end
 group :development do
   gem 'listen', '~> 3.2'
 
+  gem 'brakeman'
+  gem 'bullet'
+  gem 'bundler-audit'
+  gem 'database_consistency', require: false
+  gem 'fasterer', '~> 0.8.3', require: false
+  gem 'overcommit', '~> 0.53.0', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
