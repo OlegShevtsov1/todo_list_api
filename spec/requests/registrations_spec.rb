@@ -1,5 +1,9 @@
 RSpec.describe 'Registrations', type: :request do
+  include Docs::V1::Registrations::Api
+
   describe 'POST /auth' do
+    include Docs::V1::Registrations::Create
+
     context 'when success' do
       let(:object) { post v1_auth_path, params: params, as: :json }
 
@@ -12,7 +16,7 @@ RSpec.describe 'Registrations', type: :request do
         }
       end
 
-      it 'create user by token' do
+      it 'create user by token', :dox do
         expect { object }.to change(User, :count).from(0).to(1)
         expect(response_json.keys).to eq ['csrf']
         expect(response.cookies[JWTSessions.access_cookie]).to be_present

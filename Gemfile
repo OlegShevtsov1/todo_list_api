@@ -40,6 +40,7 @@ group :development do
 end
 
 group :test do
+  gem 'dox', require: false
   gem 'simplecov', require: false, group: :test
 end
 
