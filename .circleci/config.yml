@@ -14,6 +14,7 @@ executors:
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: todo_list_api_test
+      - image: redis
 caches:
   - &bundle_cache_full v2-repo-{{ checksum "Gemfile.lock" }}
   - &bundle_cache v2-repo-
