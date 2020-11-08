@@ -8,3 +8,6 @@ en:
       not_authorized: 'Not authorized'
       not_found: 'Not found'
       forbidden_content: 'Forbidden_content'
+  services:
+    position_task:
+      wrong_position: 'Wrong position'

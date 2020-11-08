@@ -7,6 +7,11 @@ Rails.application.routes.draw do
       post '/sign_in', controller: :sessions, action: :create
       delete '/sign_out', controller: :sessions, action: :destroy
     end
-    resources :projects
+    resources :projects do
+      resources :tasks, shallow: true do
+        resources :statuses, only: :update
+        resources :prioritizations, only: :update
+      end
+    end
   end
 end

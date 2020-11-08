@@ -27,6 +27,10 @@ class ApplicationController < ActionController::API
     @current_project ||= current_user.projects.find(params[:id])
   end
 
+  def current_task
+    @current_task ||= current_user.tasks.find(params[:id])
+  end
+
   def entity_error(status, errors)
     service = EntityErrorService.new(status, errors)
     render json: ErrorSerializer.new(service), status: status
