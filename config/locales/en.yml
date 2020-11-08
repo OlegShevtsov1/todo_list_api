@@ -3,6 +3,9 @@ en:
     user:
       email: 'Email is already used'
       password_confirmation: 'Does not match to password'
+    comment:
+      wrong_comment_size: 'Wrong comment size, (max size %{max_size})'
+
   controllers:
     application:
       not_authorized: 'Not authorized'

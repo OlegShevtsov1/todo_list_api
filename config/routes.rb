@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :tasks, shallow: true do
         resources :statuses, only: :update
         resources :prioritizations, only: :update
+        resources :comments, only: %i[create destroy]
       end
     end
   end
