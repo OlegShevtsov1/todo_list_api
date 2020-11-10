@@ -2,8 +2,8 @@ RSpec.describe 'Comments', type: :request do
   include Docs::V1::Comments::Api
 
   let(:user) { create(:user) }
-  let(:project) { create(:project, user_id: user.id) }
-  let(:task) { create(:task, project_id: project.id) }
+  let(:project) { create(:project, user: user) }
+  let(:task) { create(:task, project: project) }
   let(:headers) { authorization_header_for(user) }
 
   describe 'POST #create' do

@@ -3,6 +3,7 @@ module V1
     before_action :authorize_access_request!
 
     def create
+      authorize current_task
       comment_form = CommentForm.new(comment_params.merge(task_id: current_task.id))
       comment = comment_form.save
       if comment
@@ -26,6 +27,10 @@ module V1
 
     def current_comment
       @current_comment ||= Comment.find(params[:id])
+    end
+
+    def current_task
+      @current_task ||= Task.find(params[:id])
     end
   end
 end

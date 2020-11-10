@@ -7,7 +7,7 @@ RSpec.describe 'Tasks', type: :request do
     include Docs::V1::Tasks::Create
 
     let(:user) { create(:user) }
-    let(:project) { create(:project, user_id: user.id) }
+    let(:project) { create(:project, user: user) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success' do
@@ -47,14 +47,30 @@ RSpec.describe 'Tasks', type: :request do
         expect(response).to have_http_status :unprocessable_entity
       end
     end
+
+    context 'when failed 403' do
+      let(:params) { { name: 'Name' } }
+      let(:project) { user.projects.first }
+      let(:task) { create(:task) }
+
+      before do
+        create(:project, user: user)
+        create(:task, project: project)
+        put v1_task_path(task), headers: headers, params: params, as: :json
+      end
+
+      it 'not create task', :dox do
+        expect(response).to have_http_status :forbidden
+      end
+    end
   end
 
   describe 'PUT #update' do
     include Docs::V1::Tasks::Update
 
     let(:user) { create(:user) }
-    let!(:project) { create(:project, user_id: user.id) }
-    let!(:task) { create(:task, project_id: project.id) }
+    let(:project) { create(:project, user: user) }
+    let(:task) { create(:task, project_id: project.id) }
     let(:headers) { authorization_header_for(user) }
 
     context 'when success' do
@@ -89,6 +105,22 @@ RSpec.describe 'Tasks', type: :request do
         expect(response).to have_http_status :unprocessable_entity
       end
     end
+
+    context 'when failed 403' do
+      let(:params) { { name: 'Name' } }
+      let(:project) { user.projects.first }
+      let(:task) { create(:task) }
+
+      before do
+        create(:project, user: user)
+        create(:task, project: project)
+        put v1_task_path(task), headers: headers, params: params, as: :json
+      end
+
+      it 'not update task', :dox do
+        expect(response).to have_http_status :forbidden
+      end
+    end
   end
 
   describe 'DELETE #destroy' do
@@ -118,6 +150,22 @@ RSpec.describe 'Tasks', type: :request do
         task
         expect(Task.all).not_to be_empty
         expect(response).to have_http_status :not_found
+      end
+    end
+
+    context 'when failed 403' do
+      let(:params) { { name: 'Name' } }
+      let(:project) { user.projects.first }
+      let(:task) { create(:task) }
+
+      before do
+        create(:project, user: user)
+        create(:task, project: project)
+        put v1_task_path(task), headers: headers, params: params, as: :json
+      end
+
+      it 'not delete task', :dox do
+        expect(response).to have_http_status :forbidden
       end
     end
   end

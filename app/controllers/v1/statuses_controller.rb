@@ -8,5 +8,11 @@ module V1
       current_task.save
       render json: TaskSerializer.new(current_task).serializable_hash
     end
+
+    private
+
+    def current_task
+      @current_task ||= Task.find(params[:id])
+    end
   end
 end

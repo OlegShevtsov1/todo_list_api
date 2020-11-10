@@ -3,6 +3,7 @@ module V1
     before_action :authorize_access_request!
 
     def create
+      authorize current_project
       task_form = TaskForm.new(task_params.merge(project_id: current_project.id))
       task = task_form.save
       if task
@@ -26,6 +27,16 @@ module V1
       authorize current_task
       current_task.destroy
       head :no_content
+    end
+
+    private
+
+    def current_project
+      @current_project ||= Project.find(params[:id])
+    end
+
+    def current_task
+      @current_task ||= Task.find(params[:id])
     end
 
     def task_params

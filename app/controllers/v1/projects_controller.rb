@@ -38,6 +38,10 @@ module V1
       params.permit(:name)
     end
 
+    def current_project
+      @current_project ||= Project.find(params[:id])
+    end
+
     def projects
       @projects ||= policy_scope(Project)
     end
