@@ -15,13 +15,13 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjE0LCJ1aWQiOiIwNzA3MjEyZi01YTgwLTQ5OTctYTBiNS0yNWUzMWNlMjM4Y2UiLCJydWlkIjoiN2VjMmY5N2QtMTU4NS00MTY2LTk0YTEtN2ZkOTg0N2RkODE2In0.tKCg6meINt8cvKTXXAeVZ_RzkuW7dxwJFGBZ89L5Gdg
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjE4LCJ1aWQiOiJmOWE1M2Y3YS0wNDFkLTRhMjgtYTM0Yy0wODU4NDQxMzEzYjYiLCJydWlkIjoiZDYzMWYzYTUtZDNhNC00N2EyLWJjMTAtYTFhYzFjN2IwZmJlIn0.CbTFFMsGnMdKCi8WOUrSrH0ddVa4xJ-CWexH_oGj5bE
             Content-Type: application/json
 
     + Body
 
             {
-              "email": "roxana@veum.co.uk",
+              "email": "karissa@rodriguez.ca",
               "password": "Password"
             }
 
@@ -34,7 +34,7 @@
     + Body
 
             {
-              "csrf": "jdTPPN1cc6hlTW9zgo9lXo2+Wz2HOUBe4hPf/4p0BQHU858jBdSv44UzC2L9J4S3IS+nRvaSG1TAyxggpir2nQ=="
+              "csrf": "8MJUzj3IHZ/8ECIbsv3OON9o+DZRQOhkHhbRzir0GkaVrYatEIHUm09DxWIgYDM8c4VnwIeR1sM5PM8Svz4CZQ=="
             }
 
 ### Destroy a session [DELETE /v1/auth/sign_out]
@@ -46,7 +46,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjE1LCJ1aWQiOiI5YjE1ZTY4OC1lNjllLTRkNDctYTZiZi05ZjQzYzY5ODgxOWEiLCJydWlkIjoiNGEzYjJkMDktMjljMC00NGQzLThlM2MtMzM2OTI5MGY3M2E1In0.QeibtAjUu6JzgezOfLsd2NHwgi00wcyAf_iB3TFASG8
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjE5LCJ1aWQiOiJiODVmZTIxMC0zMDRmLTRiYjktOWRmYy04MWVhNzBjZmE5ODciLCJydWlkIjoiOTRmMDJlYTktN2M4Ny00YjhhLWEwYzgtN2VjNTQyMTU3N2NkIn0.uuhVgzCzevMVSJ_66DP3bCe5PnOzI9t7h24wIeXbKeY
             Content-Type: application/json
 
 + Response 200
@@ -74,7 +74,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjUsInVpZCI6ImFjNGU2ZGIyLWQ2MzktNGJkZS1iYzkwLTI5MzFlMjc1NzkxNCIsInJ1aWQiOiJlYmZlMTlhNy03MTI5LTQwMTEtODYyOS1hY2JkMjliZGY4ZWMifQ.VyBIFEo64wZLx_dmKl5ZaAK1FeLBfty5OFxS3pZz_6g
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjksInVpZCI6IjY0ZDRjMjgxLTE5ODYtNDA5NC1hNGQ5LTcxYmZjOGVmMzQ1MiIsInJ1aWQiOiI2YmVkZjI3Yi1iNjVlLTQ0MGUtOTY0MC04YWQwOTg5MzJjNWMifQ.MfOp1RgcaHdG40ywuOc-bkNo49xC43k0KUdcW7ByKi0
             Content-Type: application/json
 
 + Response 200
@@ -120,7 +120,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjYsInVpZCI6Ijk0NjBiYjkyLWYzMjktNDhhNy1hZTA3LTUyMzljYTg1Y2JkNCIsInJ1aWQiOiI5NzViMGQxMy05NWRmLTRiOTktOTkxYS0xOTEwNGFmNDgwZDkifQ.APR3alX2O1vX9e8vAwaAHPYj-N2_494LGtuXee6gdl8
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjEwLCJ1aWQiOiJhZTExNWE5Zi1lYzlkLTRhNWYtOTY0MC1mM2RlMzhjODAxMTQiLCJydWlkIjoiOWNlMmZjYzQtMWM5NC00YmI2LWI3ZjUtZDE5MTBjZTM5ZTk5In0.Bk1MYAdjEVekvxOlVaOHOeJmmYbtgU56HWaK1LC2JXo
             Content-Type: application/json
 
     + Body
@@ -139,7 +139,7 @@
 
             {
               "data": {
-                "id": "5",
+                "id": "9",
                 "type": "project",
                 "attributes": {
                   "name": "Project1"
@@ -147,7 +147,7 @@
                 "relationships": {
                   "user": {
                     "data": {
-                      "id": "6",
+                      "id": "10",
                       "type": "user"
                     }
                   },
@@ -166,7 +166,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjcsInVpZCI6ImVmNjE0NjI3LTFiMzktNDI3OC1iM2E5LWVjODc3OTUyZTAzOCIsInJ1aWQiOiI3ZmQzMDVmZC04NzQxLTRiYWItODgwMy02NWJhZjYxMWVjYTAifQ.WKRFn4uVW4cvB10TDTuODJHKI0g9l1F-B8qwfbzVIP8
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjExLCJ1aWQiOiJhNjljNmYxMS1lNTY3LTQ1NzEtYjk2Ny05ZWE2ODZlOTYyZDUiLCJydWlkIjoiOTUyMjcyMmQtZmUwZS00NDg1LWE0YWQtMzZmOTZmN2Y4ZTBiIn0.1WUZLNyM9XRwl5vAEbk9F1d4ayPunlAi-fsRayMuB-8
             Content-Type: application/json
 
     + Body
@@ -199,21 +199,21 @@
 ### Update a project [PUT /v1/projects/{id}]
 
 + Parameters
-    + id: `6` (number, required)
+    + id: `10` (number, required)
 
 + Request update project
-**PUT**&nbsp;&nbsp;`/v1/projects/6`
+**PUT**&nbsp;&nbsp;`/v1/projects/10`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjgsInVpZCI6IjgxYmE1YmZiLTAwMzItNDNiNS1hYjMxLWYwOWYwYTFkZTc5MCIsInJ1aWQiOiI3MjYzZjk0ZS1lODU3LTRkYzYtOTJiOS04YWY2ZjgyYTRlZWUifQ.OvWMdg30rrpYZ9oznl8FveJkkoNJsi1mntHteJkw8jw
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjEyLCJ1aWQiOiI1YmNkMzFlYi1lODliLTRiYjEtOWY1Ni03YjZhMjM3Y2QzNDgiLCJydWlkIjoiODhlMGI3NDItMWM4Ny00Mjk1LTgxYTgtZGZhMWQzMDIxMWRkIn0.JEmo57w1GVPjqtKPfxGgC5Bbk-g2IE0kX-FnTW4m0eQ
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "nobis"
+              "name": "quasi"
             }
 
 + Response 200
@@ -226,7 +226,7 @@
 
             {
               "data": {
-                "id": "6",
+                "id": "10",
                 "type": "project",
                 "attributes": {
                   "name": "sunt"
@@ -234,7 +234,7 @@
                 "relationships": {
                   "user": {
                     "data": {
-                      "id": "8",
+                      "id": "12",
                       "type": "user"
                     }
                   },
@@ -248,12 +248,12 @@
             }
 
 + Request not update project 422
-**PUT**&nbsp;&nbsp;`/v1/projects/7`
+**PUT**&nbsp;&nbsp;`/v1/projects/11`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjksInVpZCI6ImU4YTI0ZjI5LWI4ZWItNGZiMC05Yjk2LTYyODEwMWM2MDc5ZiIsInJ1aWQiOiJmZmY4YzY3Zi05ZWZkLTRmM2QtYjI2Yy01ZjRjZjg1OGMyYWMifQ.fSMOrUlBStUMAGF3l8YgK9WWXcQeehM_5KM1U6tKccA
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjEzLCJ1aWQiOiI5NzkzMmM2OC00ZTk5LTRkYzEtYTFhMy0xNGJhYjA3ZmViM2IiLCJydWlkIjoiNGYxN2FlMTYtY2RmZi00MzJmLThmZGYtMjNkOTU3MzA0MWM1In0.vk76Hpt_U6zoNzvdTrR0-pcegvorrTqvKZXzkBUe5GU
             Content-Type: application/json
 
     + Body
@@ -289,13 +289,13 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjEwLCJ1aWQiOiJlYWUzNDkzOS1hOTkyLTQzZjktOTE3Yi1hNzRhNWVlYjM4YTkiLCJydWlkIjoiZWNmOTJhZGItOGQ1OC00YjNhLTliOWItYjUzOTliOTBhZWI0In0.RGkSUmkoz8lu9GIdgvXCsM743oycE0KShQLVvK2xZ0Q
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjE0LCJ1aWQiOiJlMjQ3YjRhOC04YTIzLTQ5NzYtOTBiYS0yZjJkYzE4OGI3MmIiLCJydWlkIjoiYTY0NjlmY2EtYmI1MC00NDQ0LTllMGEtY2I5MjRiYWE4ZThmIn0.01uMqxTXVgeKtnUEn2WicFwXtb8vMbe5IVZVIXvXqRk
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "et"
+              "name": "accusantium"
             }
 
 + Response 404
@@ -313,15 +313,15 @@
 ### Destroy a project [DELETE /v1/projects/{id}]
 
 + Parameters
-    + id: `8` (number, required)
+    + id: `12` (number, required)
 
 + Request delete project
-**DELETE**&nbsp;&nbsp;`/v1/projects/8`
+**DELETE**&nbsp;&nbsp;`/v1/projects/12`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjExLCJ1aWQiOiIwZjk3Y2YwMS0zYjJkLTQxYzYtOTEyZC02MDRhYzJmMTE3NzEiLCJydWlkIjoiZmM2MDkyNzQtMmFmZS00NDFmLTgzYWYtNTBmOTE4YjkxODZmIn0.kQxFK0IPYFELhE9QXoxzqlu3SfNBQ9B79ncl2ti_MZc
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjE1LCJ1aWQiOiJjMjMxYTI0MS1iNWZiLTRmOTUtYTNlYS0zZGU2M2FhNGJjMDAiLCJydWlkIjoiZTcxNjQ0ZTctZDYzYS00MjFlLTllZWEtZjY3OGRkY2M0MDFmIn0.OEIRHVMQROuOCiPp-IuxKvqKuI-GeGevLHZ8UwsvbjM
             Content-Type: application/json
 
 + Response 204
@@ -332,7 +332,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjEyLCJ1aWQiOiJkZDliZmQ1My0wZTliLTQ3YjAtOGI3NC03ODBkMTM3YTU2N2EiLCJydWlkIjoiYzMyZDEyYTgtM2Y5MS00OTU4LTllNWUtNmU0NTM5YmY5NWZmIn0.kqTyZQb6OQGlcdOh5OaiKr_aSfRA5231UDjepZbZyGg
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjE2LCJ1aWQiOiJmODU5NmUzZi1iZjhlLTQ2NTMtOTQ0NS1mN2M1MzM2MjM0MTciLCJydWlkIjoiMDk2ZGVlNzYtYzdmZi00NTM5LTlhOWQtNzYyZTc0NTRlODVkIn0.z0xOC8-EDBm8JbwQjiwaT4_S0lQsvlnu_-V9InkXyMc
             Content-Type: application/json
 
 + Response 404
@@ -367,7 +367,7 @@
     + Body
 
             {
-              "email": "jannet@goodwin.name",
+              "email": "jeremy@goodwindooley.com",
               "password": "Password",
               "password_confirmation": "Password"
             }
@@ -381,7 +381,150 @@
     + Body
 
             {
-              "csrf": "yCBpGxoqKuyhuG2LO1vlRghs/E6PVdjIZ2fGi6+1yh1ioQTFN1ZjLYlkOKvtALufHUv7D1hRnaZJN3kZb1NAtA=="
+              "csrf": "8B3pUSvleGtVVTEWJIb6AyYjd2EfgWeywcAZ44z9qCNB0r0YDWK0wuPfwVk8QBJ4qnDVA08l5ZuB77t9fou18g=="
+            }
+
+# Group Task::Comments
+
+
+## Task::Comments [task/comment]
+
+
+### Create a comment [POST /v1/tasks/{task_id}/comments]
+
++ Parameters
+    + task_id: `1` (number, required)
+
++ Request create comment
+**POST**&nbsp;&nbsp;`/v1/tasks/1/comments?id=1`
+
+    + Headers
+
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODIsInVzZXJfaWQiOjEsInVpZCI6IjY2NWJlNDJiLTRiZjctNGFkZi05NjMwLTg3MWMxMmE0ZTc4YyIsInJ1aWQiOiJkN2E1NzM5Yi1lMDljLTQwMGYtOWY4Yi05ZTQzNjc4NjBkM2MifQ.vPOk5BdRiida7fg2ohQPmm5iv8Px90qx3Dja6YI-_X0
+            Content-Type: multipart/form-data; boundary=----------XnJLe9ZIbbGUYtzPQJ16u1
+
+    + Body
+
+            {
+              "description": "temporibus",
+              "image": {
+                "filename": "image.jpg",
+                "type": "",
+                "name": "image",
+                "tempfile": "#<File:0x000055a2866e1760>",
+                "head": "Content-Disposition: form-data; name=\"image\"; filename=\"image.jpg\"\r\nContent-Type: \r\nContent-Length: 130192\r\n"
+              }
+            }
+
++ Response 201
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "data": {
+                "id": "1",
+                "type": "comment",
+                "attributes": {
+                  "description": "temporibus",
+                  "image": {
+                    "name": "image",
+                    "record": {
+                      "id": 1,
+                      "description": "temporibus",
+                      "task_id": 1,
+                      "created_at": "2020-11-15T13:53:02.453Z",
+                      "updated_at": "2020-11-15T13:53:02.585Z",
+                      "image_data": null
+                    }
+                  }
+                },
+                "relationships": {
+                  "task": {
+                    "data": {
+                      "id": "1",
+                      "type": "task"
+                    }
+                  }
+                }
+              }
+            }
+
++ Request not create comment
+**POST**&nbsp;&nbsp;`/v1/tasks/2/comments?id=2`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODIsInVzZXJfaWQiOjIsInVpZCI6ImZkZTgyZjJhLWNhOTYtNDYwNi1iY2I1LTgwNWU3YmYyNDEzOCIsInJ1aWQiOiJiMjE2ZDBhNS1lYmM1LTQ5ZGEtYWIxYS02NDFiYjYwMTgwZDcifQ.XYFGF7whxqZNh7GrgR6TcQ2bS_qFuwVQAqX-7FWaX-c
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "description": ""
+            }
+
++ Response 422
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "errors": [
+                {
+                  "source": {
+                    "pointer": "data/attributes/description"
+                  },
+                  "detail": [
+                    "can't be blank"
+                  ]
+                }
+              ]
+            }
+
+### Destroy a comment [DELETE /v1/comments/{id}]
+
++ Parameters
+    + id: `2` (number, required)
+
++ Request destroy comment
+**DELETE**&nbsp;&nbsp;`/v1/comments/2`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODIsInVzZXJfaWQiOjMsInVpZCI6ImEyMTVkZmMxLTlkNjctNDlmYS04ZmZkLWYzNjA2NzlmZWNhOSIsInJ1aWQiOiI4ODY3ZDZiNC1hODJkLTRjZGQtYjFhMy0yYWMxOGZhYTA3OGYifQ.BXuIDFKl6ebuFFXKU-lb6jeJE81LPd4wqECtNZRbIto
+            Content-Type: application/json
+
++ Response 204
+
++ Request not destroy comment
+**DELETE**&nbsp;&nbsp;`/v1/comments/0`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODIsInVzZXJfaWQiOjQsInVpZCI6IjFhMWNhNzFkLTBkNDItNGM0Ny04NmVhLTc0MTMzMjVmMTY3ZCIsInJ1aWQiOiJjNjFlYWZhMS00NGRlLTQzZDAtYWE2YS1iNjE5YmExYWU3YjcifQ.mMxlPE_DGZSqsSg-maLO08-nX-BVtAMqzGPQlsXHIgY
+            Content-Type: application/json
+
++ Response 404
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Not found"
             }
 
 # Group Tasks
@@ -393,15 +536,15 @@
 ### Update task priority [PUT /v1/prioritizations/{id}]
 
 + Parameters
-    + id: `2` (number, required)
+    + id: `6` (number, required)
 
 + Request task position up
-**PUT**&nbsp;&nbsp;`/v1/prioritizations/2`
+**PUT**&nbsp;&nbsp;`/v1/prioritizations/6`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDAsInVzZXJfaWQiOjEsInVpZCI6IjRiYTgzN2JhLTczOGQtNDU5Zi1hNWM3LTNiYmM2MTFjMzdjMyIsInJ1aWQiOiJkZjg0ZTMzZS02NTZiLTQ4OWYtOTkxYS0zMzJkNzBkZmQ3ZTIifQ.lNCJ7RtZRxgCx2BeExJgauwrcFkFC97svbpfqM7eKS8
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODIsInVzZXJfaWQiOjUsInVpZCI6IjFiNDQxZmY4LThlZGQtNGQ4Ny04MDY5LTQ2M2FhMGU5OGRhZiIsInJ1aWQiOiJjNmZjNzI5OC1iOWQ3LTQ3NzctOGNiZi1jNmIwYWM4N2VjODQifQ.7JIWLR_zYBnrt0EVkOe1gP1tz2LDKoYw1ZMY-6vgAfA
             Content-Type: application/json
 
     + Body
@@ -420,18 +563,18 @@
 
             {
               "data": {
-                "id": "2",
+                "id": "6",
                 "type": "task",
                 "attributes": {
-                  "name": "nobis",
-                  "deadline": "2020-11-09T00:00:00.000Z",
+                  "name": "incidunt",
+                  "deadline": "2020-11-16T00:00:00.000Z",
                   "status": false,
                   "position": 1
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "1",
+                      "id": "5",
                       "type": "project"
                     }
                   }
@@ -440,12 +583,12 @@
             }
 
 + Request task position down
-**PUT**&nbsp;&nbsp;`/v1/prioritizations/5`
+**PUT**&nbsp;&nbsp;`/v1/prioritizations/9`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjIsInVpZCI6IjNkMmQ3NDk4LTQ3OTctNDkwNi1hMTQ3LTQyOTNlZjdkMDA2NSIsInJ1aWQiOiIwYmJkMWQzMi1kMjNhLTQwY2UtOTFiOC0xZGE4NGMxMWMzZjQifQ.8xbXfMQzOpmpAiUJY-24hwo11xb9CwtdY-Qdx6YLzCs
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjYsInVpZCI6ImRmNTMwMDY5LTgxYmQtNGNiMC05YTlhLTI1MDU0NDM0OGMwOCIsInJ1aWQiOiJjNmUzNmM0MC1jMzU2LTRlYjQtYWM4Yi05MTEzOWY4MTMwMzgifQ.5LZn9uZuPYY5fQEEi0XEdWzmDj2eFiUUlTyn4W70UX0
             Content-Type: application/json
 
     + Body
@@ -464,18 +607,18 @@
 
             {
               "data": {
-                "id": "5",
+                "id": "9",
                 "type": "task",
                 "attributes": {
-                  "name": "laborum",
-                  "deadline": "2020-11-09T00:00:00.000Z",
+                  "name": "consectetur",
+                  "deadline": "2020-11-16T00:00:00.000Z",
                   "status": false,
                   "position": 3
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "2",
+                      "id": "6",
                       "type": "project"
                     }
                   }
@@ -489,7 +632,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjMsInVpZCI6ImNlNGVjOGVjLThiMjItNDFmMy1hOGE3LWY0MzE1OTQ1ZDM2OSIsInJ1aWQiOiJlODVlYjkyMS0zZjA5LTRiMjYtOTVmYy02ZDRlNWY3OGZjYWMifQ.fBMm5CWXKA4t-ylzX1GFeBxnZGs7hhVtnUGglb45rzU
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjcsInVpZCI6IjRlMDMzOWU0LTc5NTktNDlmNy1iODlmLWVlNzBjMGVjZmM1YSIsInJ1aWQiOiI1ZTllMmQxMi0yM2NhLTRiNTEtYTk2Mi00NzY0NGNhNTc2MWIifQ.v0oD01X7sF9XIZP9jH0QJiKgxSPbQ9IeJFZv3N26Cz0
             Content-Type: application/json
 
     + Body
@@ -510,18 +653,18 @@
             }
 
 + Request return 422
-**PUT**&nbsp;&nbsp;`/v1/prioritizations/11`
+**PUT**&nbsp;&nbsp;`/v1/prioritizations/15`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjQsInVpZCI6IjdhYjI0ZjRhLTMyNzktNDZjNi1iNGViLTg4ZGYwOGFhZjBkMSIsInJ1aWQiOiIzNzQyNTJmOC00M2YyLTQ2M2YtYWVjOC03MTVjYjcwZWY2MjMifQ.uSyT7FLdfPb7M_-Kn081x16j21--gBDZz72_ILCRf84
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjgsInVpZCI6Ijg5MDc5MTdhLTllNGYtNDAxNS1iYTUzLWQxMTY4ZWQ4ZmQyYiIsInJ1aWQiOiIwODc0MTU0Yi1lMDVlLTQ2MmMtYjgwNC0wMTA4ZTE2OGZmMGYifQ.wcAnndY0XIUNBBLYikGIUsYwDNC_TUaE-qsilgs8wGw
             Content-Type: application/json
 
     + Body
 
             {
-              "position": "quo"
+              "position": "sed"
             }
 
 + Response 422
@@ -536,7 +679,7 @@
               "errors": [
                 {
                   "source": {
-                    "pointer": "/v1/prioritizations/11"
+                    "pointer": "/v1/prioritizations/15"
                   },
                   "detail": "Wrong position"
                 }
@@ -549,15 +692,15 @@
 ### Update task status [PATCH /v1/statuses/{id}]
 
 + Parameters
-    + id: `13` (number, required)
+    + id: `17` (number, required)
 
 + Request when do complete task
-**PATCH**&nbsp;&nbsp;`/v1/statuses/13`
+**PATCH**&nbsp;&nbsp;`/v1/statuses/17`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjE2LCJ1aWQiOiJkZDdiYTNjNi1mY2E4LTQ1OTctOGQyYS1iMjgzYzE1NDQ1ZTgiLCJydWlkIjoiMDFhNWIwZGUtZGViYy00NWZkLWE0MzctMTQ2NDlhMzVjYWNhIn0.Idcg6ZhqFDePNqAQpKtETXujVja5q0uKjsVU4lT6XMA
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjIwLCJ1aWQiOiI2Y2QzNjk0Zi1mMTgyLTQwNWUtOGMxNC00ZDg4MDMwOGY5MjgiLCJydWlkIjoiM2U0ZTAxYzEtZWQwYi00ZTYxLWEzZGYtZTJjZWVmODFmNTgyIn0.3Fweq1umXJ0rXZhbRfPSOMOa8oajdlbR6Q49Dlq88Yw
             Content-Type: application/json
 
 + Response 200
@@ -570,18 +713,18 @@
 
             {
               "data": {
-                "id": "13",
+                "id": "17",
                 "type": "task",
                 "attributes": {
-                  "name": "id",
-                  "deadline": "2020-11-09T00:00:00.000Z",
+                  "name": "non",
+                  "deadline": "2020-11-16T00:00:00.000Z",
                   "status": true,
                   "position": 1
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "10",
+                      "id": "14",
                       "type": "project"
                     }
                   }
@@ -590,12 +733,12 @@
             }
 
 + Request when do not complete task
-**PATCH**&nbsp;&nbsp;`/v1/statuses/14`
+**PATCH**&nbsp;&nbsp;`/v1/statuses/18`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjE3LCJ1aWQiOiIwNmRkZDQ4NC1hMWRjLTQ1YTQtODJiZS1hNjRlYzE3ZGJlYjQiLCJydWlkIjoiYWU4YmM3YTUtNjE3ZS00ZjM2LWFiZTItZWNiMTIxNGVkZTZiIn0.4AnoXS6y2iTovlz77lo0a_GdfdAtaa6EE9hTVNBuWXU
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjIxLCJ1aWQiOiJmMmIzYTdhOC04YTk2LTRjMTMtYTNmNS03MzViMTAxMjdmNWIiLCJydWlkIjoiMjA2MzUzYmUtNGIxZS00NTEzLWJmNTEtMmM0YmNlOTVjOTIwIn0.G7EQtpgtxyY17BHIkfE7Q20p3Vp0y0Bl9AsmI3CNxaY
             Content-Type: application/json
 
 + Response 200
@@ -608,18 +751,18 @@
 
             {
               "data": {
-                "id": "14",
+                "id": "18",
                 "type": "task",
                 "attributes": {
                   "name": "et",
-                  "deadline": "2020-11-09T00:00:00.000Z",
+                  "deadline": "2020-11-16T00:00:00.000Z",
                   "status": false,
                   "position": 1
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "11",
+                      "id": "15",
                       "type": "project"
                     }
                   }
@@ -633,7 +776,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjE4LCJ1aWQiOiIxNTU3ZTU5Zi1mNTEwLTQxM2MtYjg2My00ZGJiNjNjMjgzMDkiLCJydWlkIjoiZDA0OGIxOTctY2RiNC00OTY2LThlODMtZTM1ZDQ4YTg1MzBkIn0.VfltSdst8yMgjh4eNkK4-ifVVgA6jF6i5kRIqI99p6c
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjIyLCJ1aWQiOiJmYTRjNzJhYy0wOTAwLTQ5ZDItYjg1OC03Mjg1M2I5MWJhYWIiLCJydWlkIjoiNDQyMWZiNDEtOGUxOS00NjQ1LThlMGEtODdkMTIzMjUwZmZkIn0.C5rBVS3dYFw6ahOvPivpjn0woVXu07YH9ZvQMV0D-T4
             Content-Type: application/json
 
 + Response 404
@@ -654,22 +797,22 @@
 ### Create a task [POST /v1/projects/{project_id}/tasks]
 
 + Parameters
-    + project_id: `13` (number, required)
+    + project_id: `17` (number, required)
 
 + Request create task
-**POST**&nbsp;&nbsp;`/v1/projects/13/tasks?id=13`
+**POST**&nbsp;&nbsp;`/v1/projects/17/tasks?id=17`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjIwLCJ1aWQiOiIzYTE1MzUwOS05N2M5LTRmM2ItYjcwNy1kOTM3YTdkOTA5NWEiLCJydWlkIjoiYzc0ZDhhMDEtZmU1Yy00Y2E5LTk4MTYtZjllODRkODViZjQ2In0.LycDfrOUj3hE02-lfdF8kRWmUgMszuGFUJcIdG8nrZI
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjI0LCJ1aWQiOiIxNTBlZGU4Zi01M2Q4LTQwNTItOWE0My0yOWIxZjQ4MGUxN2EiLCJydWlkIjoiMDdkYjVmYzYtOWM3Ny00OTVlLWI2YTUtMmQzYmI2NzZlMjM5In0.0-NGNDN2rdZDANnN1RkNlS5nc2Wf8UO1Cho-LD5Mi2E
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "quos",
-              "deadline": "2020-11-09T21:08:21.916Z"
+              "name": "et",
+              "deadline": "2020-11-16T13:53:03.656Z"
             }
 
 + Response 201
@@ -682,18 +825,18 @@
 
             {
               "data": {
-                "id": "16",
+                "id": "20",
                 "type": "task",
                 "attributes": {
-                  "name": "quos",
-                  "deadline": "2020-11-09T21:08:21.916Z",
+                  "name": "et",
+                  "deadline": "2020-11-16T13:53:03.656Z",
                   "status": false,
                   "position": 1
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "13",
+                      "id": "17",
                       "type": "project"
                     }
                   }
@@ -707,7 +850,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjIxLCJ1aWQiOiI0OTM3YTdiMy04NjU0LTRiNmUtOTk2NS1mY2Q4ODEwZmY2N2IiLCJydWlkIjoiNzMxZGFiMjktYjI1OS00NzU3LWE5YjEtODVhMmE5ZjFlYmRjIn0.9ZTlPlUvi-QGYOx8hhuFuZUPmyV-DN8HQtIfBckpcMs
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjI1LCJ1aWQiOiIzZDY1ODlhOS1hYjQzLTQwMDUtYTY5OC0zOGQ5NDVlMTk0MDgiLCJydWlkIjoiNWZkM2UzOGUtZGFlNy00ZTBiLThkMDktY2RmNDg5NGQ3MWFiIn0.awVK7ihCNp9NsHRlRQ3Gi3ZwKlnEZxWatROy98meGSE
             Content-Type: application/json
 
     + Body
@@ -728,12 +871,12 @@
             }
 
 + Request not create task
-**POST**&nbsp;&nbsp;`/v1/projects/14/tasks?id=14`
+**POST**&nbsp;&nbsp;`/v1/projects/18/tasks?id=18`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDEsInVzZXJfaWQiOjIyLCJ1aWQiOiI3N2M5Y2Y4ZS02Y2ZiLTQwZWQtOTQ4OC04Y2YxOGMxMzY3N2YiLCJydWlkIjoiZWFkNzczZGUtN2E5NS00YjRkLWI3OWMtM2M5YWIxYjZmMWI4In0.WanyKrC3FFGDzBhJUiY8HR9Vu8y-tM371RzBxxnOYv8
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjI2LCJ1aWQiOiIwYWM2M2Y1MC1mNzQ2LTQyMWUtOTAwNy0zODNlMWY3MWUzNWMiLCJydWlkIjoiZWNhNDljZmItMDcxYi00OTdkLTliNmEtNWQwOTVlYzQxMzljIn0.xUcEXh_e0rWOKOhu2vV5TBmZC-FOBGZM06HLVeu56wc
             Content-Type: application/json
 
     + Body
@@ -763,24 +906,51 @@
               ]
             }
 
-### Update a task [PUT /v1/tasks/{id}]
-
-+ Parameters
-    + id: `17` (number, required)
-
-+ Request update task
-**PUT**&nbsp;&nbsp;`/v1/tasks/17`
++ Request not create task
+**PUT**&nbsp;&nbsp;`/v1/tasks/22`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDIsInVzZXJfaWQiOjIzLCJ1aWQiOiI1ZTc1Y2M4Yi05MDA5LTQ2NTAtODRmOS1lNDE5ZDVmYTNlY2QiLCJydWlkIjoiZmZmOGVjYzYtMjVhMy00MzNiLWJhN2ItYTIxYTU5OGQ2MGY0In0.ltxvqDpYLGW7GYcod816hJjohmSfi2ANMDFG-3WZBbM
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjI3LCJ1aWQiOiIzMzMxZjAwZC1hOTdlLTRkZjktYTc2MS0xYTljY2ViZjBhOGEiLCJydWlkIjoiZGMxZmMzYjctZTkxZi00OTU5LWI0NmItMDIxMmQ0ODc2M2RmIn0.-fSRi2h16ZNp3nwBFs0PfL3ZtvK6OEHyKkvYkfOVwpc
             Content-Type: application/json
 
     + Body
 
             {
-              "name": "illo"
+              "name": "Name"
+            }
+
++ Response 403
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Forbidden_content"
+            }
+
+### Update a task [PUT /v1/tasks/{id}]
+
++ Parameters
+    + id: `23` (number, required)
+
++ Request update task
+**PUT**&nbsp;&nbsp;`/v1/tasks/23`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjI5LCJ1aWQiOiJiYWM3ZGYwYi1mMjk4LTRmNjItOTAzNy05MGRhZGI1OTNlNWIiLCJydWlkIjoiNmU3OWEwZWMtZGFmYS00YThhLWI2MjMtOWNjNTU4ZWM2Y2VlIn0.vuzE7NIcJ2-77Uv8StM1wvX_5SKrKIXyoV6WhPSS-kk
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": "est"
             }
 
 + Response 200
@@ -793,18 +963,18 @@
 
             {
               "data": {
-                "id": "17",
+                "id": "23",
                 "type": "task",
                 "attributes": {
-                  "name": "quis",
-                  "deadline": "2020-11-09T00:00:00.000Z",
+                  "name": "aut",
+                  "deadline": "2020-11-16T00:00:00.000Z",
                   "status": false,
                   "position": 1
                 },
                 "relationships": {
                   "project": {
                     "data": {
-                      "id": "15",
+                      "id": "21",
                       "type": "project"
                     }
                   }
@@ -818,7 +988,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDIsInVzZXJfaWQiOjI0LCJ1aWQiOiJiY2UzNzMxMS0zNWY0LTQwNmMtODRiOC00NWNlMDJiMTRlMDciLCJydWlkIjoiOWEyMGJjZGItNzQyNy00MzdmLWI2NWYtN2EyYTg1NmFhNDg5In0.gx7Hx3futjJLZj8769v199vUEZ7FedE8WxOuM6yvoPI
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjMwLCJ1aWQiOiJjNzIwMGQxZS04ODQ4LTRhMzAtYjdiZC02YTlmMWY2ODA1Y2UiLCJydWlkIjoiMDZhYjdlZDAtZTkyMy00MzEwLWFlNGUtMWE2N2ZkMGZkYWYyIn0.5A4XyRTFBKdUK8rPgCqSEKsdmq8ORyos9EFiaNGGK_8
             Content-Type: application/json
 
     + Body
@@ -839,12 +1009,12 @@
             }
 
 + Request not update task
-**PUT**&nbsp;&nbsp;`/v1/tasks/19`
+**PUT**&nbsp;&nbsp;`/v1/tasks/24`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDIsInVzZXJfaWQiOjI1LCJ1aWQiOiJiNGIyY2I2Yy1jNzJkLTQ2MjAtOGEwMS1iNGViNDk4OGZhYzciLCJydWlkIjoiMGYzY2YxNGEtY2U4Ni00YzJmLWFhNzQtODBhYzAyMzQzOWI1In0.GchhPFJ-Ng5V0bXwYEMt03oveU5Ji6kORi4qPdU_HUM
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjMxLCJ1aWQiOiIwMDBhNTdiZS0yZDUwLTRiM2MtODE0Ny0zOGI0N2RiODAzNTUiLCJydWlkIjoiNjNmNjEzOGQtZWI5NS00Y2Q4LTk0NDktNTY3ZTIzZjVmNDNkIn0.9OsoyQVy--7qulpLwFOa7Azkw_OTW42F2-AXcyS9zFo
             Content-Type: application/json
 
     + Body
@@ -874,18 +1044,45 @@
               ]
             }
 
-### Destroy a task [DELETE /v1/tasks/{id}]
-
-+ Parameters
-    + id: `20` (number, required)
-
-+ Request success destroy task
-**DELETE**&nbsp;&nbsp;`/v1/tasks/20`
++ Request not update task
+**PUT**&nbsp;&nbsp;`/v1/tasks/26`
 
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDIsInVzZXJfaWQiOjI2LCJ1aWQiOiJmZTgyOWExNy04MzAzLTQ2OGEtODI1Zi1iOWRiMTFjMTdlNWEiLCJydWlkIjoiNjA1ODk5MDgtOTgyMy00OGI3LWIzNGYtM2Y3NGZhZDg3YmZkIn0.q_6O9_K-gdsy_6WJAkmne975t2ju7uYmrpPKdQ6m4yo
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjMyLCJ1aWQiOiIyYjlmNDFjZC05ZjVmLTQxZGMtOWIzOS0xYmYxMmViZjEwMmMiLCJydWlkIjoiYzI0NDdjNDAtN2U5Ny00MDExLWI1MDMtNjUzZGRhMjliYjY0In0.gsdv3ZK40Oji3kTbhGI-wRsD7XDzdiv583PkgcyrnGM
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": "Name"
+            }
+
++ Response 403
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Forbidden_content"
+            }
+
+### Destroy a task [DELETE /v1/tasks/{id}]
+
++ Parameters
+    + id: `27` (number, required)
+
++ Request success destroy task
+**DELETE**&nbsp;&nbsp;`/v1/tasks/27`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjM0LCJ1aWQiOiI1M2YxZDAwZS0zYWRmLTRlYjEtOGE0ZS02ZGZiYThmOTJkMzIiLCJydWlkIjoiMWE0NjExM2QtZDIzMi00Yjg2LTg1MjgtODQxNWEwNmQ1ZDQ4In0.1PSW-naKHBgsb4O14hrdeV6V5ovqiDJ0Z0YY0WIYDk0
             Content-Type: application/json
 
 + Response 204
@@ -896,7 +1093,7 @@
     + Headers
 
             Accept: application/json
-            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDQ4NzMzMDIsInVzZXJfaWQiOjI3LCJ1aWQiOiJlM2E3Y2U1ZS03NDY4LTRiNWItOTg1ZC04MTMwNDg1MTNmYTEiLCJydWlkIjoiMThjODhiODktZjRmNS00NmEyLTlkYWItMzhjMjA5OWU3NjllIn0.cG2z9eyI1V-0dfw4VZTTOpq6ZWqzAtmZwrgeZRUzY_w
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODMsInVzZXJfaWQiOjM1LCJ1aWQiOiIwNjE5M2NjYi1lNmMzLTRhMWEtYWE4YS0yMjNmMDMxNzZmZGQiLCJydWlkIjoiOWE0ODc5ZGQtNmM2Ni00NTU1LWEzYjItMzRhNjVjNmMzZTEzIn0.vKtsQk3niBNYSsu2BEm57G1aDmRx2P3Qf9n43aUnk3Y
             Content-Type: application/json
 
 + Response 404
@@ -909,4 +1106,31 @@
 
             {
               "error": "Not found"
+            }
+
++ Request not delete task
+**PUT**&nbsp;&nbsp;`/v1/tasks/30`
+
+    + Headers
+
+            Accept: application/json
+            Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MDU0NTE5ODQsInVzZXJfaWQiOjM3LCJ1aWQiOiI5YTAwOTZhNy1lMWZiLTQzMTItOWQ0Ny02YTdkYWI2MWEzNmYiLCJydWlkIjoiZjEwYTVhMzItYzM3My00MmUxLWFjNDctNzIzOWVkYjhkMjhhIn0.x-LPqThInQm3-1cQ-mh6GezwxMNV64yu5uG1XKAUo5E
+            Content-Type: application/json
+
+    + Body
+
+            {
+              "name": "Name"
+            }
+
++ Response 403
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "error": "Forbidden_content"
             }

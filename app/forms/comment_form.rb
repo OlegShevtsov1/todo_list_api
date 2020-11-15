@@ -3,7 +3,7 @@ class CommentForm
 
   MAX_SIZE = 300
 
-  attr_accessor :id, :task_id, :description
+  attr_accessor :id, :task_id, :description, :image
 
   validates :description, presence: true
   validates :description, length: { maximum: MAX_SIZE,
@@ -12,6 +12,6 @@ class CommentForm
   def save
     return unless valid?
 
-    Comment.create(task_id: task_id, description: description)
+    Comment.create(task_id: task_id, description: description, image: image)
   end
 end

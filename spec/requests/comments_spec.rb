@@ -10,8 +10,8 @@ RSpec.describe 'Comments', type: :request do
     include Docs::V1::Comments::Create
 
     context 'when success' do
-      let(:params) { { description: FFaker::Lorem.word } }
-
+      let(:params) { { description: FFaker::Lorem.word, image: image } }
+      let(:image) { fixture_file_upload('image.jpg') }
       let(:request_comment) { post v1_task_comments_path(task, id: task), headers: headers, params: params }
 
       it 'create comment', :dox do

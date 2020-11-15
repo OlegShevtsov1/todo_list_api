@@ -1,6 +1,6 @@
 class CommentSerializer
   include JSONAPI::Serializer
-  attributes :description
+  attributes :description, :image
 
   belongs_to :task
 end
