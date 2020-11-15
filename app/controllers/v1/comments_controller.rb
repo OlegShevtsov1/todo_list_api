@@ -20,7 +20,7 @@ module V1
     end
 
     def comment_params
-      params.permit(:description)
+      params.permit(:description, :image)
     end
 
     private
