@@ -1,14 +1,14 @@
 class ProjectPolicy < ApplicationPolicy
   def create?
-    user.projects.find_by(id: project.id)
+    user.projects.exists?(id: project.id)
   end
 
   def update?
-    user.projects.find_by(id: project.id)
+    user.projects.exists?(id: project.id)
   end
 
   def destroy?
-    user.projects.find_by(id: project.id)
+    user.projects.exists?(id: project.id)
   end
 
   private

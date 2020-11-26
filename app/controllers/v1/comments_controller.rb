@@ -28,9 +28,5 @@ module V1
     def current_comment
       @current_comment ||= Comment.find(params[:id])
     end
-
-    def current_task
-      @current_task ||= Task.find(params[:id])
-    end
   end
 end

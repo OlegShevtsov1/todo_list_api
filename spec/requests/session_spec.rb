@@ -12,7 +12,6 @@ RSpec.describe 'Sessions', type: :request do
 
       it 'create user by token', :dox do
         expect(response_json.keys).to eq ['csrf']
-        expect(response.cookies[JWTSessions.access_cookie]).to be_present
         expect(response).to have_http_status :ok
       end
     end

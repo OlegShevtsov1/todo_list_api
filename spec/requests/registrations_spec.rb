@@ -19,7 +19,6 @@ RSpec.describe 'Registrations', type: :request do
       it 'create user by token', :dox do
         expect { object }.to change(User, :count).from(0).to(1)
         expect(response_json.keys).to eq ['csrf']
-        expect(response.cookies[JWTSessions.access_cookie]).to be_present
         expect(response).to be_created
       end
     end

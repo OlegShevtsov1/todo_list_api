@@ -1,14 +1,14 @@
 class CommentPolicy < ApplicationPolicy
   def belongs_to_user?
-    user.comments.find_by(id: comment.id)
+    user.comments.exists?(id: comment.id)
   end
 
   def create?
-    user.tasks.find_by(id: task.id)
+    user.tasks.exists?(id: task.id)
   end
 
   def destroy?
-    user.comments.find_by(id: comment.id)
+    user.comments.exists?(id: comment.id)
   end
 
   private

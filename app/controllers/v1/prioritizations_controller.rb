@@ -18,9 +18,5 @@ module V1
       service = ExceptionErrorService.new(request.path, errors)
       render json: ErrorSerializer.new(service), status: status
     end
-
-    def current_task
-      @current_task ||= Task.find(params[:id])
-    end
   end
 end

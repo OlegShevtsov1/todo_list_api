@@ -35,10 +35,6 @@ module V1
       @current_project ||= Project.find(params[:id])
     end
 
-    def current_task
-      @current_task ||= Task.find(params[:id])
-    end
-
     def task_params
       params.permit(:name, :deadline)
     end

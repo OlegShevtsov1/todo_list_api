@@ -7,11 +7,9 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 2.7.1
   Exclude:
-    - 'bin/bundle'
-    - 'bin/rails'
-    - 'bin/rake'
-    - "db/schema.rb"
-    - "db/migrate/*"
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
     - 'config/environments/*'
     - 'config/initializers/*'
     - 'config/puma.rb'
