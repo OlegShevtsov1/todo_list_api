@@ -15,7 +15,7 @@ module V1
     private
 
     def exception_error(status, errors)
-      service = ExceptionErrorService.new(request.path, errors)
+      service = Errors::ExceptionErrorService.new(request.path, errors)
       render json: ErrorSerializer.new(service), status: status
     end
   end
