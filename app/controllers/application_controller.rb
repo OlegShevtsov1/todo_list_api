@@ -7,6 +7,10 @@ class ApplicationController < ActionController::API
 
   private
 
+  def session(user)
+    JWTSessions::Session.new(payload: { user_id: user.id }, refresh_by_access_allowed: true)
+  end
+
   def not_authorized
     render json: { error: I18n.t('controllers.application.not_authorized') }, status: :unauthorized
   end

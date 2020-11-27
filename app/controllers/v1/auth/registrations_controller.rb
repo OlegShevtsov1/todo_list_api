@@ -5,8 +5,7 @@ module V1
         user_form = UserForm.new(user_params)
         user = user_form.save
         if user
-          session = JWTSessions::Session.new(payload: { user_id: user.id }, refresh_by_access_allowed: true)
-          tokens = session.login
+          tokens = session(user).login
           render json: { csrf: tokens[:csrf] }, status: :created
         else
           render json: { error: user_form.errors.full_messages.join(' ') }, status: :unprocessable_entity

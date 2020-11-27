@@ -4,8 +4,7 @@ module V1
       def create
         user = User.find_by!(email: params[:email])
         if user.authenticate(params[:password])
-          session = JWTSessions::Session.new(payload: { user_id: user.id }, refresh_by_access_allowed: true)
-          tokens = session.login
+          tokens = session(user).login
 
           render json: { csrf: tokens[:csrf] }
         else
