@@ -1,13 +1,5 @@
 class TaskPolicy < ApplicationPolicy
-  def create?
-    user.tasks.exists?(id: task.id)
-  end
-
-  def update?
-    user.tasks.exists?(id: task.id)
-  end
-
-  def destroy?
+  def call?
     user.tasks.exists?(id: task.id)
   end
 

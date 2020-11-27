@@ -1,13 +1,5 @@
 class ProjectPolicy < ApplicationPolicy
-  def create?
-    user.projects.exists?(id: project.id)
-  end
-
-  def update?
-    user.projects.exists?(id: project.id)
-  end
-
-  def destroy?
+  def call?
     user.projects.exists?(id: project.id)
   end
 

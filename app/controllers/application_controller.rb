@@ -27,6 +27,10 @@ class ApplicationController < ActionController::API
     @current_user ||= User.find(payload['user_id'])
   end
 
+  def current_project
+    @current_project ||= Project.find(params[:id])
+  end
+
   def current_task
     @current_task ||= Task.find(params[:id])
   end

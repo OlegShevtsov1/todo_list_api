@@ -3,7 +3,7 @@ module V1
     before_action :authorize_access_request!
 
     def update
-      authorize current_task
+      AuthorizeService.new(current_user).call(current_task)
       service = PositionTaskService.new(current_task, params)
       if service.call
         render json: TaskSerializer.new(service.current_task).serializable_hash

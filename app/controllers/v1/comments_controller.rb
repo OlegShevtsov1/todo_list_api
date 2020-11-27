@@ -3,7 +3,7 @@ module V1
     before_action :authorize_access_request!
 
     def create
-      authorize current_task
+      AuthorizeService.new(current_user).call(current_task)
       comment_form = CommentForm.new(comment_params.merge(task_id: current_task.id))
       comment = comment_form.save
       if comment
@@ -14,7 +14,7 @@ module V1
     end
 
     def destroy
-      authorize current_comment
+      AuthorizeService.new(current_user).call(current_comment)
       current_comment.destroy
       head :no_content
     end
