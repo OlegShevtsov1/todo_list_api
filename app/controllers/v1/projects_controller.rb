@@ -7,36 +7,29 @@ module V1
     end
 
     def create
-      project_form = ProjectForm.new(project_params.merge(user_id: current_user.id))
-      project = project_form.save
-      if project
-        render json: ProjectSerializer.new(project).serializable_hash, status: :created
+      service = Projects::CreateService.new(params, current_user).call
+      if service.errors.empty?
+        render json: ProjectSerializer.new(service).serializable_hash, status: :created
       else
-        entity_error(:unprocessable_entity, project_form.errors)
+        entity_error(:unprocessable_entity, service.errors)
       end
     end
 
     def update
-      AuthorizeService.new(current_user).call(current_project)
-      project_form = ProjectForm.new(project_params.merge(id: current_project.id))
-      if project_form.update
-        render json: ProjectSerializer.new(current_project).serializable_hash
+      service = Projects::UpdateService.new(params, current_user).call
+      if service.errors.empty?
+        render json: ProjectSerializer.new(current_project).serializable_hash, status: :ok
       else
-        entity_error(:unprocessable_entity, project_form.errors)
+        entity_error(:unprocessable_entity, service.errors)
       end
     end
 
     def destroy
-      AuthorizeService.new(current_user).call(current_project)
-      current_project.destroy
+      Projects::DestroyService.new(params, current_user).call
       head :no_content
     end
 
     private
-
-    def project_params
-      params.permit(:name)
-    end
 
     def projects
       @projects ||= policy_scope(Project)

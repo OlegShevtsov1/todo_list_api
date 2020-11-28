@@ -1,5 +1,7 @@
 en:
   validation:
+    project:
+      name: 'Project name is busy'
     user:
       email: 'Email is already used'
       password_confirmation: 'Does not match to password'

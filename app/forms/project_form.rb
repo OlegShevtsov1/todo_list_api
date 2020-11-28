@@ -1,19 +1,22 @@
 class ProjectForm
   include ActiveModel::Model
 
-  attr_accessor :id, :user_id, :name
+  attr_accessor :name, :project, :current_user
 
   validates :name, presence: true
+  validates_with ProjectsValidator
 
-  def save
-    return unless valid?
-
-    Project.create(name: name, user_id: user_id)
+  def initialize(current_user, params, project)
+    @current_user = current_user
+    @params = params
+    @project = project
+    self.attributes = params
   end
 
-  def update
-    return unless valid?
+  def call
+    return self unless valid?
 
-    Project.find(id).update(name: name)
+    project.new_record? ? project.save : project.update(@params)
+    project
   end
 end
