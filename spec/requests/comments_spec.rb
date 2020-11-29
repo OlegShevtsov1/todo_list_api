@@ -10,7 +10,7 @@ RSpec.describe 'Comments', type: :request do
     include Docs::V1::Comments::Create
 
     context 'when success' do
-      let(:params) { { description: FFaker::Lorem.word, image: image } }
+      let(:params) { { comment: { description: FFaker::Lorem.word, image: image } } }
       let(:image) { fixture_file_upload('image.jpg') }
       let(:request_comment) { post v1_task_comments_path(task, id: task), headers: headers, params: params }
 
@@ -21,7 +21,7 @@ RSpec.describe 'Comments', type: :request do
     end
 
     context 'when failed' do
-      let(:params) { { description: '' } }
+      let(:params) { { comment: { description: '' } } }
 
       before { post v1_task_comments_path(task, id: task), headers: headers, params: params, as: :json }
 
