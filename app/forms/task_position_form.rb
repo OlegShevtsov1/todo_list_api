@@ -1,9 +1,9 @@
-class TaskForm
+class TaskPositionForm
   include ActiveModel::Model
 
-  attr_accessor :name, :status, :position, :deadline, :task, :current_user
+  attr_accessor :position, :task, :current_user
 
-  validates :name, presence: true
+  validates_with TasksPositionValidator
 
   def initialize(current_user, params, task)
     @current_user = current_user
@@ -15,7 +15,7 @@ class TaskForm
   def call
     return self unless valid?
 
-    task.new_record? ? task.save : task.update(@params)
+    @params[:position] == 'up' ? task.move_higher : task.move_lower
     task
   end
 end

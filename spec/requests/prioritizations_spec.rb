@@ -12,7 +12,7 @@ RSpec.describe 'Position Task', type: :request do
     let(:headers) { authorization_header_for(user) }
 
     context 'when change position success up' do
-      let(:params) { { position: :up } }
+      let(:params) { { task: { position: :up } } }
 
       let(:request_prior) { put v1_prioritization_path(task2), params: params, headers: headers, as: :json }
 
@@ -24,7 +24,7 @@ RSpec.describe 'Position Task', type: :request do
     end
 
     context 'when change position success down' do
-      let(:params) { { position: :down } }
+      let(:params) { { task: { position: :down } } }
 
       let(:request_prior) { put v1_prioritization_path(task2), params: params, headers: headers, as: :json }
 
@@ -47,7 +47,7 @@ RSpec.describe 'Position Task', type: :request do
     end
 
     context 'when failure 422' do
-      let(:params) { { position: FFaker::Lorem.word } }
+      let(:params) { { task: { position: FFaker::Lorem.word } } }
 
       before { put v1_prioritization_path(task2), params: params, headers: headers, as: :json }
 
