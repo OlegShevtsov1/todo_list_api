@@ -1,5 +1,6 @@
 module V1
   class ProjectsController < ApplicationController
+    include Pundit
     before_action :authorize_access_request!
 
     def index
@@ -18,7 +19,7 @@ module V1
     def update
       service = Projects::UpdateService.new(params, current_user).call
       if service.errors.empty?
-        render json: ProjectSerializer.new(current_project).serializable_hash, status: :ok
+        render json: ProjectSerializer.new(service).serializable_hash, status: :ok
       else
         entity_error(:unprocessable_entity, service.errors)
       end

@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   include JWTSessions::RailsAuthorization
-  include Pundit
+
   rescue_from JWTSessions::Errors::Unauthorized, with: :not_authorized
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_error
   rescue_from Pundit::NotAuthorizedError, with: :forbidden_content
@@ -25,14 +25,6 @@ class ApplicationController < ActionController::API
 
   def current_user
     @current_user ||= User.find(payload['user_id'])
-  end
-
-  def current_project
-    @current_project ||= Project.find(params[:id])
-  end
-
-  def current_task
-    @current_task ||= Task.find(params[:id])
   end
 
   def entity_error(status, errors)
