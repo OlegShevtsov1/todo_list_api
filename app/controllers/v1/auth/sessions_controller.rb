@@ -2,11 +2,10 @@ module V1
   module Auth
     class SessionsController < ApplicationController
       def create
-        user = User.find_by!(email: params[:email])
-        if user.authenticate(params[:password])
-          tokens = session(user).login
-
-          render json: { csrf: tokens[:csrf] }
+        service = Sessions::CreateService.new(params).call
+        if service.authenticate(params[:password])
+          tokens = session(service).login
+          render json: { csrf: tokens[:csrf] }, status: :ok
         else
           not_authorized
         end
@@ -14,8 +13,7 @@ module V1
 
       def destroy
         authorize_access_request!
-        session = JWTSessions::Session.new(payload: payload)
-        session.flush_by_access_payload
+        Sessions::DestroyService.new(payload).call
         render json: :ok
       end
     end

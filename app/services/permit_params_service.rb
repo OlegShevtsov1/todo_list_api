@@ -2,7 +2,8 @@ class PermitParamsService
   PARAMS = {
     project: %i[name],
     task: %i[name deadline position],
-    comment: %i[description image]
+    comment: %i[description image],
+    user: %i[email password password_confirmation]
   }.freeze
 
   def initialize(params, object_type)

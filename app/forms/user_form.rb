@@ -4,16 +4,22 @@ class UserForm
   MIN_PASSWORD_SIZ = 8
   PASSWORD_FORMAT = /\A[a-zA-Z0-9]*\z/.freeze
 
-  attr_accessor :email, :password, :password_confirmation
+  attr_accessor :email, :password, :password_confirmation, :user
 
   validates :email, :password, :password_confirmation, presence: true
   validates :email, format: { with: EMAIL_FORMAT }
   validates :password, length: { minimum: MIN_PASSWORD_SIZ }, format: { with: PASSWORD_FORMAT }
   validates_with UsersValidator
 
-  def save
-    return unless valid?
+  def initialize(user, params)
+    @user = user
+    self.attributes = params
+  end
 
-    User.create(email: email, password: password, password_confirmation: password_confirmation)
+  def call
+    return self unless valid?
+
+    user.save
+    user
   end
 end

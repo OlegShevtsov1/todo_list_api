@@ -9,11 +9,11 @@ RSpec.describe 'Registrations', type: :request do
 
       let(:user_params) { attributes_for(:user) }
       let(:params) do
-        {
+        { user: {
           email: user_params[:email],
           password: user_params[:password],
           password_confirmation: user_params[:password]
-        }
+        } }
       end
 
       it 'create user by token', :dox do
@@ -24,7 +24,7 @@ RSpec.describe 'Registrations', type: :request do
     end
 
     context 'when failed' do
-      let(:params) { {} }
+      let(:params) { { user: { email: 'wrong_email' } } }
 
       before { post v1_auth_path, params: params, as: :json }
 
