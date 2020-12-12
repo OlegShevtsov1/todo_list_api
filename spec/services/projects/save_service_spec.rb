@@ -10,7 +10,7 @@ RSpec.describe Projects::SaveService do
         let(:params) { ActionController::Parameters.new(valid_params) }
 
         it 'returns Project object' do
-          expect(service.call.class).to eq(Project)
+          expect(service.call.class).to eq(described_class)
         end
 
         it 'creates new project' do
@@ -25,7 +25,7 @@ RSpec.describe Projects::SaveService do
         let(:params) { ActionController::Parameters.new(invalid_params) }
 
         it 'returns ProjectForm' do
-          expect(service.call.class).to eq(ProjectForm)
+          expect(service.call.class).to eq(described_class)
         end
 
         it 'does not create new project' do
@@ -43,7 +43,7 @@ RSpec.describe Projects::SaveService do
         let(:params) { ActionController::Parameters.new(valid_params) }
 
         it 'returns Project object' do
-          expect(service.call.class).to eq(Project)
+          expect(service.call.class).to eq(described_class)
         end
       end
 
@@ -55,7 +55,7 @@ RSpec.describe Projects::SaveService do
         let(:params) { ActionController::Parameters.new(invalid_params) }
 
         it 'returns ProjectForm' do
-          expect(service.call.class).to eq(ProjectForm)
+          expect(service.call.class).to eq(described_class)
         end
 
         it 'does not change project name' do

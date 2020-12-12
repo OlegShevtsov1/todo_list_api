@@ -9,19 +9,19 @@ module V1
 
     def create
       service = Projects::SaveService.new(params, current_user).call
-      if service.errors.empty?
-        render json: ProjectSerializer.new(service).serializable_hash, status: :created
+      if service.object.errors.empty?
+        render json: service.serialize, status: :created
       else
-        entity_error(:unprocessable_entity, service.errors)
+        entity_error(:unprocessable_entity, service.object.errors)
       end
     end
 
     def update
       service = Projects::SaveService.new(params, current_user).call
-      if service.errors.empty?
-        render json: ProjectSerializer.new(service).serializable_hash, status: :ok
+      if service.object.errors.empty?
+        render json: service.serialize, status: :ok
       else
-        entity_error(:unprocessable_entity, service.errors)
+        entity_error(:unprocessable_entity, service.object.errors)
       end
     end
 
