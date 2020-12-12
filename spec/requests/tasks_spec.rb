@@ -15,7 +15,7 @@ RSpec.describe 'Tasks', type: :request do
       let(:params) { { name: attributes[:name], deadline: Time.zone.now.next_day } }
 
       let(:request_task) do
-        post v1_project_tasks_path(project.id, id: project),
+        post v1_project_tasks_path(project.id),
              headers: headers, params: params, as: :json
       end
 
@@ -27,7 +27,8 @@ RSpec.describe 'Tasks', type: :request do
 
     context 'when failed 404' do
       let(:fail_project_id) { 0 }
-      let(:params) { {} }
+      let(:attributes) { attributes_for(:task) }
+      let(:params) { { name: attributes[:name], deadline: Time.zone.now.next_day } }
 
       before { post v1_project_tasks_path(fail_project_id), headers: headers, params: params, as: :json }
 
@@ -40,7 +41,7 @@ RSpec.describe 'Tasks', type: :request do
     context 'when failed 422' do
       let(:params) { { name: '' } }
 
-      before { post v1_project_tasks_path(project.id, id: project), headers: headers, params: params, as: :json }
+      before { post v1_project_tasks_path(project.id), headers: headers, params: params, as: :json }
 
       it 'not create task', :dox do
         expect(Task.all).to be_empty
@@ -87,7 +88,8 @@ RSpec.describe 'Tasks', type: :request do
 
     context 'when failed 404' do
       let(:fail_task) { 0 }
-      let(:params) { {} }
+      let(:attributes) { attributes_for(:task) }
+      let(:params) { { name: attributes[:name], deadline: Time.zone.now.next_day } }
 
       before { put v1_task_path(fail_task), headers: headers, params: params, as: :json }
 

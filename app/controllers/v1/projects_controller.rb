@@ -8,7 +8,7 @@ module V1
     end
 
     def create
-      service = Projects::CreateService.new(params, current_user).call
+      service = Projects::SaveService.new(params, current_user).call
       if service.errors.empty?
         render json: ProjectSerializer.new(service).serializable_hash, status: :created
       else
@@ -17,7 +17,7 @@ module V1
     end
 
     def update
-      service = Projects::UpdateService.new(params, current_user).call
+      service = Projects::SaveService.new(params, current_user).call
       if service.errors.empty?
         render json: ProjectSerializer.new(service).serializable_hash, status: :ok
       else

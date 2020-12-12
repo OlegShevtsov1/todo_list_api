@@ -3,7 +3,7 @@ module V1
     before_action :authorize_access_request!
 
     def create
-      service = Tasks::CreateService.new(params, current_user).call
+      service = Tasks::SaveService.new(params, current_user).call
       if service.errors.empty?
         render json: TaskSerializer.new(service).serializable_hash, status: :created
       else
@@ -12,7 +12,7 @@ module V1
     end
 
     def update
-      service = Tasks::UpdateService.new(params, current_user).call
+      service = Tasks::SaveService.new(params, current_user).call
       if service.errors.empty?
         render json: TaskSerializer.new(service).serializable_hash
       else

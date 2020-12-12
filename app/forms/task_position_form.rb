@@ -1,5 +1,6 @@
 class TaskPositionForm
   include ActiveModel::Model
+  POSITION = 'up'.freeze
 
   attr_accessor :position, :task, :current_user
 
@@ -15,7 +16,7 @@ class TaskPositionForm
   def call
     return self unless valid?
 
-    @params[:position] == 'up' ? task.move_higher : task.move_lower
+    @params[:position] == POSITION ? task.move_higher : task.move_lower
     task
   end
 end
