@@ -16,8 +16,4 @@ class BaseService
   def current_object(object_type)
     @current_object ||= FindObjectService.new(object_type, @params).call
   end
-
-  def params_id
-    @params[:id]
-  end
 end

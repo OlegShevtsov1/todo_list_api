@@ -3,10 +3,9 @@ module Projects
     attr_reader :object
 
     def call
-      params = object_params(Project)
-      project = params_id ? update : create
+      project = params[:id] ? update : create
       authorize.call(project) if project.persisted?
-      @object ||= ProjectForm.new(current_user, params, project).call
+      @object ||= ProjectForm.new(current_user, object_params(Project), project).call
       self
     end
 
@@ -17,8 +16,7 @@ module Projects
     private
 
     def create
-      params = object_params(Project)
-      current_user.projects.new(params)
+      current_user.projects.new object_params(Project)
     end
 
     def update

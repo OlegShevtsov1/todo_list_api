@@ -1,18 +1,16 @@
 module Tasks
   class SaveService < BaseService
     def call
-      params = object_params(Task)
-      task = params_id ? update : create
+      task = params[:id] ? update : create
       authorize.call(task) if task.persisted?
-      TaskForm.new(current_user, params, task).call
+      TaskForm.new(current_user, object_params(Task), task).call
     end
 
     private
 
     def create
-      params = object_params(Task)
       project = current_object(Project)
-      project.tasks.new(params)
+      project.tasks.new object_params(Task)
     end
 
     def update
